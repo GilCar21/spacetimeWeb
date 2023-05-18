@@ -1,4 +1,6 @@
 import { User } from "lucide-react";
+import logo from "../assets/logo.svg"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +16,15 @@ export default function Home() {
           </div>
             <p className="text-sm leading-snug max-w-[140px]"><span className="underline">Crie sua conta </span> e salve suas memórias!</p>
         </a>
-        <div></div>
+        <div className="space-y-5">
+          <Image src={logo} alt="Logo Spacetime" />
+          <div className="max-w-[420px] space-y-1">
+            <h1 className="mt-5 text-5xl font-bold leading-tight text-gray-50">Sua cápsula do tempo</h1>
+            <p className="text-lg leading-relaxed ">Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo!</p>
+          </div>
+          <a href="" className="inline-block rounded-full bg-green-500 px-5 py-2 font-alt uppercase leading-none text-black hover:bg-green-600">CADASTRAR LEMBRANÇA</a>
+        </div>
+        <div className="text-sm leading-relaxed text-gray-200">Feito com 💜 no NLW da Rocketseat</div>
       </div>
       <div className="flex flex-col p-16 bg-[url(../assets/estrelas.svg)] bg-cover">
         <div className="flex flex-1 items-center justify-center">
