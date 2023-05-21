@@ -33,7 +33,7 @@ export default function RootLayout({
         <Hero />
         <Copy />
       </div>
-      <div className="flex flex-col p-16 bg-[url(../assets/estrelas.svg)] bg-cover">
+      <div className="flex flex-col overflow-y-scroll max-h-screen bg-[url(../assets/estrelas.svg)] bg-cover">
         {children}
       </div>
     </main>
